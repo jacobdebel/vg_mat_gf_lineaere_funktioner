@@ -1,0 +1,182 @@
+#+title: Lineære funktioner
+#+subtitle: Matematik grundforløb
+#+author: Vibenshus Gymnasium
+# Themes: beige|black|blood|league|moon|night|serif|simple|sky|solarized|white
+#+reveal_theme: sky
+#+reveal_title_slide: <h2>%t</h2><h3>%s</h3><h4>%a</h4><h4>%d</h4>
+#+reveal_title_slide_background:
+#+reveal_default_slide_background:
+#+reveal_extra_options: slideNumber:"c/t",progress:true,transition:"slide",navigationMode:"default",history:false,hash:true
+#+options: toc:nil num:nil tags:nil timestamp:nil ^:{}
+
+
+* (Nye) begreber
+
+** (Nye) begreber
+
+- Funktion
+- uafhængig variabel 
+- afhængig variabel 
+- Forskrift
+  
+** Funktion
+
+#+attr_reveal: :frag (appear)
+- Beskrivelse af en sammenhæng mellem en afhængig og en uafhængig variabel.
+- $f(x) = a \cdot x + b$
+  
+** Uafhængig variabel
+
+#+attr_reveal: :frag (appear)
+- Typisk $x$
+- "Kan man selv vælge værdien på?"
+- Er på den vandrette akse (x-aksen) i et koordinatsystem.
+
+** Afhængig variabel
+
+#+attr_reveal: :frag (appear)
+- Før kendt som $y$
+- Nu kendt som $f(x)$
+- Eller $g(x)$
+- Eller $h(x)$...
+- Hvad siger det inde i hovedet?
+  
+** Forskrift
+
+#+attr_reveal: :frag (appear)
+- Højre side af $$f(x) = a \cdot x + b$$
+- Men hvad med? $$a \cdot x + b = f(x)$$
+
+** Grafisk /afbildning/
+
+#+attr_reveal: :frag (appear)
+- Altså den tegnede graf.
+- Ret linje, som skærer y-aksen i $(0,b)$ og med hældningstal $a$
+
+#+attr_reveal: :frag (appear)
+#+attr_html: :width 40% :align middle
+[[file:img/(Nye)_begreber/screenshot_2019-08-28_15-22-46.png]]
+
+* Beregninger med funktioner
+
+** Beregning af /funktionsværdier/
+
+$$f(x)=-2 \cdot x + 5$$
+
+#+attr_reveal: :frag (appear)
+- Beregne funktionsværdien $f(2)$
+  #+attr_reveal: :frag (appear)
+  - Betyder $x=2$
+  - Indsæt 2 alle steder, hvor der står $x$
+  - $f(2) = -2 \cdot 2 + 5 = 1$
+
+** Beregning af /uafhængig/ variabel 
+$$f(x)=-2 \cdot x + 5$$
+
+#+attr_reveal: :frag (appear)
+- Beregn $x$, når $f(x)=11$ 
+  #+attr_reveal: :frag (appear)
+  - løs ligningen $11 = -2 \cdot x + 5$
+  - $2x +11 = 5$
+  - $2x = 5 -11$
+  - $x = \frac{5-11}{2}$
+  - $x = -3$
+
+* Den /konstante/ funktion
+** Den /konstante/ funktion
+
+#+attr_reveal: :frag (appear)
+- $f(x) = k$
+- eller $f(x) = b$
+- Hvilken værdi har $a$ så?
+#+attr_reveal: :frag (appear)
+#+attr_html: :width 40%
+[[file:img/Den_/konstante/_funktion/csm_konstant_936e1ec668_2019-08-28_20-43-00.png]]
+
+** Opgave 
+   
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 09:57:26
+#+attr_html: :width 70%
+[[file:img/Den_/konstante/_funktion/screenshot_2019-08-29_09-57-26.png]]
+
+
+* Lineær funktion fra ét kendt punkt og et kendt stigningstal
+** Formel
+Det kendte punkt hedder $P_0 = (x_0,y_0)$, og hældningstallet hedder stadig $a$.
+
+Funktionen $f(x)$ findes da vha:
+
+$$f(x) = a\cdot (x-x_0) + y_0\,.$$
+
+#+attr_reveal: :frag (appear)
+- $a$ skal være et tal, ligesom det altid har skullet.
+- $x_0$ og $y_0$ skal også være tal.
+- $x$ er den /uafhængige/ variabel, mens $x_0$ er et tal. (Forvirret?)
+  
+** Eksempel
+
+$P_0 = (x_0,y_0) = (2,-3)$ og $a=-2$
+
+#+attr_reveal: :frag (appear)
+- $f(x) = a \cdot (x-x_0) + y_0$
+- $f(x) = -2 \cdot (x-2) + (-3)$
+- $f(x) = -2 x + 4 -3$
+- $f(x) = -2x +1$
+  
+** Opgave
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 10:12:49
+#+attr_html: :width 70%
+[[file:img/Lineær_funktion_fra_ét_kendt_punkt_og_et_kendt_stigningstal/screenshot_2019-08-29_10-12-49.png]]
+
+* Roden i en førstegradsfunktion
+
+** AKA skæring med x-aksen
+#+attr_reveal: :frag (appear)
+- x-aksen ligger der, hvor $y=0$.
+- Derfor $f(x)=0$
+- $f(x) = ax+b$
+- $ax +b=0$
+- Isolér $x$
+- $ax = -b$
+- $x = - \frac{b}{a}$
+
+** Eksempel
+
+Find roden (skæring med x-aksen) for
+$$f(x)=3x-15$$
+
+#+attr_reveal: :frag (appear)
+- $f(x)=0$
+- $3x-15 = 0$
+- $x = \frac{15}{3} = 5$
+
+** Opgave
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 10:18:58
+#+attr_html: :width 75%
+[[file:img/Roden_i_en_førstegradsfunktion/screenshot_2019-08-29_10-18-58.png]]
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 10:19:25
+#+attr_html: :width 100%
+[[file:img/Roden_i_en_førstegradsfunktion/screenshot_2019-08-29_10-19-25.png]]
+#+reveal_html: </div>
+
+** Opgave 
+#+reveal_html: <div class="column" style="float:left; width: 50%">
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 10:29:02
+#+attr_html: :width 100%
+[[file:img/Roden_i_en_førstegradsfunktion/screenshot_2019-08-29_10-29-02.png]]
+
+#+reveal_html: </div>
+
+#+reveal_html: <div class="column" style="float:right; width: 50%">
+
+#+DOWNLOADED: /tmp/screenshot.png @ 2019-08-29 10:29:26
+#+attr_html: :width 100%
+[[file:img/Roden_i_en_førstegradsfunktion/screenshot_2019-08-29_10-29-26.png]]
+#+reveal_html: </div>
